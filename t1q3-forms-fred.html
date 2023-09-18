@@ -1,39 +1,37 @@
 <h6>Version 0.0.1</h6>
 <h1> <align center>t1a03-forms.fred.html</h1>
-<h3><font color=green> proving that you can use:Forms 2023</fonts></h3><br> 
+<h3><font color="green">proving that you can use:Forms 2023</font></h3><br>
 
-The following are all form elements (add to them):<br> 
-<form > 
+The following are all form elements (add to them):<br>
+<form>
 
-First Name: <input type=text id="myText01" value="Giga CHADUS!"><br>
-Checkbox: <br> 
-Have brain:<input type=checkbox><br> 
-Have no brain: <input type=checkbox><br>
-Have brain and no brain:<input type=checkbox><br> 
-Radio Buttons:<br> 
-95.4 <input type=radio name="myRad01" Value="95.4"><br> 
-101 <input type=radio name="myRad01" value="101"><br> 
-Hidden:<input type=hidden ><br> 
-File:<input type=file><br>
-reset:<input type=reset><br> 
-Submit (advanced)<input type=submit><br> 
+First Name: <input type="text" id="myText01" value="Giga CHADUS!"><br>
+Checkbox: <br>
+Have brain:<input type="checkbox" onclick="updateTextArea('have brain')"><br>
+Have no brain: <input type="checkbox" onclick="updateTextArea('have no brain')"><br>
+Have brain and no brain:<input type="checkbox" onclick="updateTextArea('have brain and no brain')"><br>
+Radio Buttons:<br>
+95.4 <input type="radio" name="myRad01" value="95.4"><br>
+101 <input type="radio" name="myRad01" value="101"><br>
+Hidden:<input type="hidden"><br>
+File:<input type="file"><br>
+reset:<input type="reset"><br>
+Submit (advanced)<input type="submit"><br>
 
-Button: <input type=button value="click" onclick="{document.getElementById('myArea01').value= 'cool'}"><br> 
-Textarea:<br> 
-  <textarea id="myarea01" cols=60 rows=5> Cool this works </textarea><br> 
+Button: <input type="button" value="click" onclick="document.getElementById('myarea01').value = 'cool'"><br>
+Textarea:<br>
+  <textarea id="myarea01" cols="60" rows="5">Cool this works</textarea><br>
 
-  Select Box:<BR> 
-  <select id="myselect01" size=2 onchange="updatetextArea()"{
-    document.getElementById('myArea01').value = document.getElementbyId('mySelect01').value
-  }">
-<option value='have brain'> have brain </option>
-<option value='have no brain'> have no brain </option>
-<option value='have brain amd no brain'> Have no brain and brain </option>
+Select Box:<br>
+<select id="myselect01" size="2" onchange="updateTextArea(this.value)">
+  <option value='have brain'>have brain</option>
+  <option value='have no brain'>have no brain</option>
+  <option value='have brain and no brain'>Have no brain and brain</option>
 </select>
-  <script>
-    function updatetextArea() {
-      var selectedOption = document.getElementById("myselect").value;
-      document.getElementById("mytextarea").value = selectedOption;
-    }
-  </script>
+
+<script>
+  function updateTextArea(value) {
+    document.getElementById("myarea01").value = value;
+  }
+</script>
 </form>
