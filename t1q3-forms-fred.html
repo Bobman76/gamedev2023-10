@@ -6,33 +6,74 @@ The following are all form elements (add to them):<br>
 <form>
 
 First Name: <input type="text" id="myText01" value="Giga CHADUS!"><br>
+  
+  <script>
+  var firstNameInput = document.getElementById('myText01');
+
+  var firstName = firstNameInput.value;
+</script>
+  
 Checkbox: <br>
+  
 Have brain:<input type="checkbox" onclick="updateTextArea('have brain')"><br>
+  
 Have no brain: <input type="checkbox" onclick="updateTextArea('have no brain')"><br>
+  
 Have brain and no brain:<input type="checkbox" onclick="updateTextArea('have brain and no brain')"><br>
+  
 I am a stinky poo poo:<input type="checkbox" onclick="updateTextArea('I am a stinky poo poo')"><br>
+  
+My name is :<input type="checkbox" onclick="updatetextArea()"><br>
+
+  <script> 
+    function updatetextArea() {
+      //Retrive value of first name input
+  Var firstName = document.getElementById('myTextArea').value;
+
+      //Update text area with the first name
+  document.getElementById('myTextArea').value = 'My name is: ' + firstName;
+    }
+  
+  </script>
+  
 Radio Buttons:<br>
+  
 95.4 <input type="radio" name="myRad01" value="95.4"><br>
+  
 101 <input type="radio" name="myRad01" value="101"><br>
+  
 Hidden:<input type="hidden"><br>
+
 File:<input type="file"><br>
+  
 reset:<input type="reset"><br>
+  
 Submit (advanced)<input type="submit"><br>
 
 Button: <input type="button" value="click" onclick="document.getElementById('myarea01').value = 'cool'"><br>
+  
 Textarea:<br>
+  
   <textarea id="myarea01" cols="60" rows="5">Cool this works</textarea><br>
 
 Select Box:<br>
+  
 <select id="myselect01" size="2" onchange="updateTextArea(this.value)">
+
   <option value='have brain'>have brain</option>
+  
   <option value='have no brain'>have no brain</option>
+  
   <option value='have brain and no brain'>Have no brain and brain</option>
+  
 </select>
 
 <script>
+  
   function updateTextArea(value) {
     document.getElementById("myarea01").value = value;
   }
+  
 </script>
+  
 </form>
