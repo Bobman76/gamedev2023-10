@@ -23,11 +23,17 @@ Textarea:<br>
   <textarea id="myarea01" cols=60 rows=5> Cool this works </textarea><br> 
 
   Select Box:<BR> 
-  <select id="myselect01" size=2 onchange="{
+  <select id="myselect01" size=2 onchange="updatetextArea()"{
     document.getElementById('myArea01').value = document.getElementbyId('mySelect01').value
   }">
 <option value='have brain'> have brain </option>
 <option value='have no brain'> have no brain </option>
 <option value='have brain amd no brain'> Have no brain and brain </option>
 </select>
+  <script>
+    function updatetextArea() {
+      var selectedOption = document.getElementById("myselect").value;
+      document.getElementById("mytextarea").value = selectedOption;
+    }
+  </script>
 </form>
