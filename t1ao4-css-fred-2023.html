@@ -25,7 +25,12 @@
   <i>This is Italic</i> <br> 
   <i id="myB1" style="color: #00ff00; background-color: blue;">Some text with color and background</i>
 
-  <input type="button" value="Change" onclick="changeStyles()"><br><br> 
+  <input type="button" value="Change" onclick="{
+    if
+    document.getElementById('myB1').style.color = 'red' 
+    document.getElementById('myB1').style.backgroundColor= 'yellow
+    
+  }changeStyles()"><br><br> 
 
   <textarea id="myTextArea" style="background-image: url('myImgNew.jpg'); position:relative; left:0; top:0; width:200px; height:50px;"> 
     Advanced, see if you move this textarea.
