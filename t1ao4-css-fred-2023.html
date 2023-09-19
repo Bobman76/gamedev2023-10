@@ -40,11 +40,12 @@
       var myB1 = document.getElementById('myB1');
       var myTextArea = document.getElementById('myTextArea');
 
-      myB1.style.color = 'red';
-      myB1.style.backgroundColor = 'yellow';
-
-      // Update the textarea text
-      myTextArea.value = "Text color changed to red. Background color changed to yellow.";
+     if( myB1.style.color =='red') 
+     {  myTextArea.value = "Background color is red.";}
+       
+      else{
+      myTextArea.value = " Background color changed to yellow."; 
+     }
     }
   </script>
 </body>
