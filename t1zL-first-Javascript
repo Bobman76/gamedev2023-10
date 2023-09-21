@@ -1,0 +1,18 @@
+<script> 
+let myOutArray = new Array() 
+
+function myPrint(x) {
+let my animal 
+For(i=1; 1 <= x; i++) {
+myAnimal = 'cat' 
+if (i <= 3) {myAnimal = 'kitten'} 
+myOutArray[i] = 'the' + myAnimal + 'is' + i + 'years old <br>'
+}
+document.write(myOutArray[1] + myOutArrat[2])
+
+
+}
+
+MyPrint(7)
+
+</script>
