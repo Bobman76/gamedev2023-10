@@ -2,6 +2,16 @@
 <html>
 <head>
   <style>
+    body, html {
+      height: 100%;
+      width: 100%;
+      margin: 0; /* Remove any default margins */
+      padding: 0; /* Remove any default padding */
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0gRWNKtq3Wao1V_xfpMWiQwqvR7UdXaw-aA&usqp=CAU");
+      background-repeat: no-repeat; /* Don't repeat the background image */
+      background-position: center top;
+    }
+
     table {
       width: 50%;
       border-collapse: collapse;
@@ -25,88 +35,51 @@
 </head>
 <body>
 
-<h2>You</h2>
-  <table>
-  <tr>
-    <th>Name</th>
-    <th>Age</td>
-    <th>Country</th>
-  </tr>
-  <tr>
-    <td>Mr ellise</td>
-    <td>75</td>
-    <td>NerdLund</td>
-  </tr>
-  <tr>
-    <td>Mattthew Taylor</td>
-    <td>16</td>
-    <td>Jacked Republic</td>
-  </tr>
-  <tr>
-    <td>Bob</td>
-    <td>Unknown</td>
-    <td>Where they have the cheese maggots</td>
-  </tr>
-</table>
-<style>
-body, html {
-  height: 100%;
-  width: 100%;
-  margin: 0; /* Remove any default margins */
-  padding: 0; /* Remove any default padding */
-}
-body {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0gRWNKtq3Wao1V_xfpMWiQwqvR7UdXaw-aA&usqp=CAU");
-  background-repeat: no-repeat; /* Don't repeat the background image */
-  background-position: center top;
-}
-</style>
+<h6>Version 0.0.1</h6>
+<h1 style="text-align: center;">T1A04 CSS by Fred 2023</h1>
 
-<body>
-  <h6>Version 0.0.1</h6>
-  <h1 style="text-align: center;">T1A04 CSS by Fred 2023</h1>
+Reference Link 
+<a href="https://www.w3schools.com/css/default.asp">w3schools</a><br> 
+Cascading Style Sheets (CSS) is properly done with a .css file listing all CSS commands for your website.<br> 
+Another way to do CSS is using the style tag at the top head part of a webpage.<br> 
 
-  Reference Link 
-  <a href="https://www.w3schools.com/css/default.asp">w3schools</a><br> 
-  Cascading Style Sheets (CSS) is properly done with a .css file listing all CSS commands for your website.<br> 
-  Another way to do CSS is using the style tag at the top head part of a webpage.<br> 
+Here is a typical in-document style:
+<pre>
+  b { 
+    color: #00f00;
+  }
+</pre><br> 
 
-  Here is a typical in-document style:
-  <pre>
-    b { 
-      color: #00f00;
-    }
-  </pre><br> 
+I do CSS inline inside the tag. It overpowers all other methods. <br><br> 
+<i>This is Italic</i> <br> 
+<i id="myB1" style="color: #00ff00; background-color: blue;">Some text with color and background</i>
 
-  I do CSS inline inside the tag. It overpowers all other methods. <br><br> 
-  <i>This is Italic</i> <br> 
-  <i id="myB1" style="color: #00ff00; background-color: blue;">Some text with color and background</i>
+<button onclick="changeStyles()">Change</button>
 
-  <button onclick="changeStyles()">Change</button>
-  
-  <br><br><br><br><br><br><br><br><br><br><br><br> 
+<br><br><br><br><br><br><br><br><br><br><br><br> 
 
-  <img src="myImage01.jpg" width="200" style="border-radius: 200px;">
+<img src="myImage01.jpg" width="200" style="border-radius: 200px;">
 
-  <script>
-    function changeStyles() {
-      var myB1 = document.getElementById('myB1');
-      var myTextArea = document.getElementById('myTextArea');
+<script>
+  function changeStyles() {
+    var myB1 = document.getElementById('myB1');
+    var myTextArea = document.getElementById('myTextArea');
 
-      myB1.style.color = 'red';
-      myB1.style.backgroundColor = 'yellow';
-      
-      myTextArea.value = 
-        "Once upon a time there was a teacher named Mr. Ellise. He was marking the project of a geriatric high schooler. \n" +
-        "As he was marking the text, he couldn't help but be baffled by the seemingly nonexistence textarea within the CSS document. \n" +
-        "'He must be lazy.' Mr. Ellise thought. Those words were like a mantra for Mr. Ellise. *Click* He clicked the button \n" +
-        "which was supposed to cause the italic text to change colors and for some strange reason the text area appeared. \n" +
-        "'Matthew is a very smart W human.' Mr. Ellise thought.";
-    }
-  </script>
+    myB1.style.color = 'red';
+    myB1.style.backgroundColor = 'yellow';
 
-  <textarea id="myTextArea" style="background-image: url('myImgNew.jpg'); position:relative; left:0; top:0; width:300px; height:200px;">
-    This is a text area. Not a text arena.
-  </textarea> 
+    myTextArea.value = 
+      "Once upon a time there was a teacher named Mr. Ellise. He was marking the project of a geriatric high schooler. \n" +
+      "As he was marking the text, he couldn't help but be baffled by the seemingly nonexistence textarea within the CSS document. \n" +
+      "'He must be lazy.' Mr. Ellise thought. Those words were like a mantra for Mr. Ellise. *Click* He clicked the button \n" +
+      "which was supposed to cause the italic text to change colors and for some strange reason the text area appeared. \n" +
+      "'Matthew is a very smart W human.' Mr. Ellise thought.";
+  }
+</script>
+
+<textarea id="myTextArea" style="background-image: url('myImgNew.jpg'); position:relative; left:0; top:0; width:300px; height:200px;">
+  This is a text area. Not a text arena.
+</textarea> 
+
 </body>
 </html>
