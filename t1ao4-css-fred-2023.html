@@ -82,15 +82,32 @@ I do CSS inline inside the tag. It overpowers all other methods. <br><br>
 <textarea id="myTextArea" style="background-image: url('myImgNew.jpg'); position:relative; left:0; top:0; width:300px; height:200px;">
   This is a text area. Not a text arena.
 </textarea> 
-  <div class="dropdown"> 
-    <button class="dropbtn">Dropdown</button>
-    <div class = "dropdown-content">
-    <a href="https://bobman76.github.io/gamedev2023-10/tiaq1-basicweb-fred.html"> gamedev2023-10/tiaq1-basicweb-fred </a>
-    <a href="https://bobman76.github.io/gamedev2023-10/t1q3-forms-fred.html"> gamedev2023-10/t1q3-forms-fred.html </a>
-    <a href="https://bobman76.github.io/gamedev2023-10/1a02-list-tables-Fred.html"> 1a02-list-tables-Fred.html </a>
+<style>
+.dropdown {
+posistion: relative;
+Display: inline_block; 
+  
+}
 
-    </div>
-  </div>
+.dropdown-content {
+display: none; 
+posistion: absolute; 
+background-color: #f9f9f9; 
+mid-width: 160px; 
+box-shadow: 0px 8px 16px 0px rbga(0, 0, 0, 0, 0.2); 
+padding: 12px 16px; 
+z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+display: block; 
+}
+</style>
+<div class = "dropdown">
+  <span> mouse over me</span>
+  <div class = "dropdown content">
+    <p> Hello world </p>
+
+</div>
 
 
 </body>
