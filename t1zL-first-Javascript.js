@@ -1,4 +1,5 @@
   let myOutArray = new Array();
+x = 20;
 
   function myPrint(x) {
     let myAnimal;
@@ -20,4 +21,3 @@
     document.write(myOutArray[1] + myOutArray[2]);
   }
 
-  myPrint(20);
