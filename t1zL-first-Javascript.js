@@ -6,7 +6,7 @@ function myPrint(x) {
     myAnimal = 'cat';
     if (i <= 4) {
       myAnimal = 'kitten';
-    } else if (i <= 12) {
+    } else if (i >= 12) {
       myAnimal = 'long cat';
     }
 
