@@ -1,4 +1,3 @@
-<script>
   let myOutArray = new Array();
 
   function myPrint(x) {
@@ -14,4 +13,3 @@
   }
 
   myPrint(7);
-</script>
