@@ -11,8 +11,9 @@ function myPrint(x) {
     }
 
     myOutArray[i] = 'My ' + myAnimal + ' is ' + i + ' years old <br>';
+    document.write(myOutArray[i]);
   }
-  document.write(myOutArray[1] + myOutArray[2]);
+  
 }
 
 let x = 20;
