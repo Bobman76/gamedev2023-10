@@ -18,5 +18,5 @@ if (Number.isInteger(x)) {
   }
   myPrint(x);
 } else {
-  console.log("Please input a number");
+  document.write("Please input a number.");
 }
