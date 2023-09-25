@@ -1,6 +1,6 @@
 let myOutArray = [];
-System.out.print("How old is the cat?: ");
-int x = scanner.nextInt();
+let x = parseInt(prompt("How old is the cat?: "));
+
 function myPrint(x) {
   let myAnimal;
   for (let i = 1; i <= x; i++) {
@@ -14,6 +14,6 @@ function myPrint(x) {
     myOutArray[i] = 'My ' + myAnimal + ' is ' + i + ' years old <br>';
     document.write(myOutArray[i]);
   }
-  
 }
+
 myPrint(x);
