@@ -1,5 +1,6 @@
 let myOutArray = [];
-
+System.out.print("How old is the cat?: ");
+int x = scanner.nextInt();
 function myPrint(x) {
   let myAnimal;
   for (let i = 1; i <= x; i++) {
@@ -15,6 +16,4 @@ function myPrint(x) {
   }
   
 }
-
-let x = 20;
 myPrint(x);
