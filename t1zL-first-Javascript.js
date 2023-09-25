@@ -18,5 +18,5 @@ if (Number.isInteger(x)) {
   }
   myPrint(x);
 } else {
-  document.write("Please input a number.");
+  alert("Input a number!");
 }
