@@ -1,6 +1,6 @@
 let myOutArray = [];
 let x = parseInt(prompt("How old is the cat?: "));
-
+alert("This checks if you've inputted a number or not and allows you to have the cat go on for you're chosen amount of years'); 
 if (Number.isInteger(x)) {
   function myPrint(x) {
     let myAnimal;
@@ -9,7 +9,7 @@ if (Number.isInteger(x)) {
       if (i <= 4) {
         myAnimal = 'kitten';
       } else if (i >= 12) {
-        myAnimal = 'long cat';
+        myAnimal = 'Immortal cat';
       }
 
       myOutArray[i] = 'My ' + myAnimal + ' is ' + i + ' years old <br>';
