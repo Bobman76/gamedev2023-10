@@ -16,14 +16,14 @@
     </style>
 </head>
 <body>
-    <input type="button" value="click" onclick="myPrint(true)"> </input>
-    <div id="output"></div>
+    <input type="button" value="click" onclick="myPrint(true)"> <style> "width: 300px; height; 300px; "</style></input>
+    <div id="mybutton"></div>
 
     <script>
         let myOutArray = [];
 
         function myPrint(isTrue) {
-            let output = document.getElementById('output');
+            let mybutton = document.getElementById('output');
 
             if (isTrue) {
                 let x = parseInt(prompt("How old is the cat?: "));
@@ -39,7 +39,9 @@
                     myOutArray[i - 1] = 'My ' + myAnimal + ' is ' + i + ' years old <br>';
                     output.innerHTML += myOutArray[i - 1];
                 }
-            } else {
+            } 
+            else 
+            {
                 output.innerHTML = "Button not clicked.";
             }
         }
