@@ -16,7 +16,7 @@
     </style>
 </head>
 <body>
-    <input type="button" value="click" onclick="myPrint(true)">
+    <input type="button" value="click" onclick="myPrint(true)"> </input>
     <div id="output"></div>
 
     <script>
@@ -24,7 +24,6 @@
 
         function myPrint(isTrue) {
             let output = document.getElementById('output');
-            output.innerHTML = '';
 
             if (isTrue) {
                 let x = parseInt(prompt("How old is the cat?: "));
