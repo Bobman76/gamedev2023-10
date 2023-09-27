@@ -8,7 +8,7 @@
             width: 100%;
             margin: 0;
             padding: 0;
-            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWELbR8UVlqih4JA96-TQ-lsMNxvqHsU-u6w&usqp=CAU"); /* Replace with a valid URL */
+            background-image: ("https://www.google.com/imgres?imgurl=https%3A%2F%2Fe1.pxfuel.com%2Fdesktop-wallpaper%2F155%2F255%2Fdesktop-wallpaper-backgrounds-nice-3-background-nice.jpg&tbnid=JLXeoZDjfcwWOM&vet=12ahUKEwiq9Zf1pMuBAxUvITQIHXjdBlgQMygVegQIARB5..i&imgrefurl=https%3A%2F%2Fwww.pxfuel.com%2Fen%2Fquery%3Fq%3Dnice%2Bbackgrounds%2Bof%2Bnice%2Bbackgrounds%26page%3D10&docid=y4OmjOLUSvTELM&w=850&h=680&itg=1&q=good%20background%20images&safe=active&ved=2ahUKEwiq9Zf1pMuBAxUvITQIHXjdBlgQMygVegQIARB5"); /* Provide a valid URL */
             background-repeat: no-repeat;
             background-position: center top;
             background-size: cover;
@@ -16,14 +16,14 @@
     </style>
 </head>
 <body>
-    <input type="button" value="click" onclick="myPrint(true)" style="width: 300px; height: 300px;">
-    <div id="output"></div>
+    <input type="button" value="click" onclick="myPrint(true)" style = "width: 300px; height: 300px; margin-top: 100px; margin-left: 100px;"> </style></input>
+    <div id="mybutton"></div>
 
     <script>
         let myOutArray = [];
 
         function myPrint(isTrue) {
-            let output = document.getElementById('output');
+            let mybutton = document.getElementById('output');
 
             if (isTrue) {
                 let x = parseInt(prompt("How old is the cat?: "));
@@ -48,8 +48,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
