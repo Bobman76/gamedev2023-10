@@ -1,30 +1,39 @@
-<h3 align="center>T102-object-zombie-fred.html</h3> 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zombie Detection</title>
+</head>
+<body>
+    <h3 align="center">T102-object-zombie-fred.html</h3>
 
-<script>
-    let myZombie = { 
-        'zombie' : true, 
-        'Name' : 'Jon'
-    }
-    Let myHuman = { 
-        'zombie' : false, 
-        'Name' : 'dan'
-    }
-</script>
-is <select id="mySelect01" size="1" onchange="{ 
-Myinput = document.getElementById('mySelect01').value 
-    if(myZombie.name == myInput && myZombie.zombie) {
-        document.getElementById('myDiv01').innerHTML = myInput + 'is a zombie'
-    } else if (myHuman.name == myInput && myHuman.zombie) { 
-        document.getElementById('myDiv01').innerHTML = myInput + 'is a zombie' 
-    } 
-    else{ 
-        document.getElementById('myDiv01').innerHTML = myInput + 'is Not A Zombie'
-    }
-}">
+    <script>
+        let myZombie = { 
+            'zombie': true, 
+            'Name': 'Jon'
+        };
+        let myHuman = { 
+            'zombie': false, 
+            'Name': 'Dan'
+        };
+    </script>
 
-<option>
-<option>Jon
-<option>Dan 
-</select> a Zombie?<br> 
+    <select id="mySelect01" size="1" onchange="
+        let myInput = document.getElementById('mySelect01').value;
+        if (myZombie.Name == myInput && myZombie.zombie) {
+            document.getElementById('myDiv01').innerHTML = myInput + ' is a zombie';
+        } else if (myHuman.Name == myInput && myHuman.zombie) { 
+            document.getElementById('myDiv01').innerHTML = myInput + ' is a zombie'; 
+        } else { 
+            document.getElementById('myDiv01').innerHTML = myInput + ' is Not A Zombie';
+        }
+    ">
+        <option>Select a name</option>
+        <option>Jon</option>
+        <option>Dan</option>
+    </select>
 
-<div id="myDiv01">...</div><br> 
+    <br>Is a Zombie?<br>
+
+    <div id="myDiv01">...</div><br>
+</body>
+</html>
