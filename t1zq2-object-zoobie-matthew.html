@@ -1,18 +1,30 @@
-<h3 align=center>t1z02-object-zombie-fred.html</h3>
-<script> Let myZombie = { 'zombie' : true 
-                         'name' : jon 
-  }
-  Let myHuman = { 'zombie' : false 
-                         'name' : Dan 
-  }
+<h3 align="center>T102-object-zombie-fred.html</h3> 
+
+<script>
+    let myZombie = { 
+        'zombie' : true, 
+        'Name' : 'Jon'
+    }
+    Let myHuman = { 
+        'zombie' : false, 
+        'Name' : 'dan'
+    }
 </script>
+is <select id="mySelect01" size="1" onchange="{ 
+Myinput = document.getElementById('mySelect01').value 
+    if(myZombie.name == myInput && myZombie.zombie) {
+        document.getElementById('myDiv01').innerHTML = myInput + 'is a zombie'
+    } else if (myHuman.name == myInput && myHuman.zombie) { 
+        document.getElementById('myDiv01').innerHTML = myInput + 'is a zombie' 
+    } 
+    else{ 
+        document.getElementById('myDiv01').innerHTML = myInput + 'is Not A Zombie'
+    }
+}">
 
-Is < input type="text" value="Jon"> A zombie? <br> 
-<input type=button value = "check' onlick = "{
-  
-}"><br> 
+<option>
+<option>Jon
+<option>Dan 
+</select> a Zombie?<br> 
 
-
-<div id="mydiv01">...</div><br>
-
-
+<div id="myDiv01">...</div><br> 
