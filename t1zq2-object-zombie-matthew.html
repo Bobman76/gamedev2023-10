@@ -1,0 +1,76 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>Zombie Detection</title>
+</head>
+<body>
+    <style>
+        body, html {
+          height: 100%;
+          width: 100%;
+          margin: 0; 
+          padding: 0; 
+          background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcbLZjCRgAwbij7Z3Op-KsnRR4YOuHCtS5Wg&usqp=CAU");
+          background-repeat: no-repeat; 
+          background-position: center top;
+          background-size: cover;
+        }
+        #mySelect01 { 
+            width: 1000px; 
+        }
+    </style> 
+    <h3 align="center">T102-object-zombie-fred.html</h3>
+
+    <script>
+        let myZombie = { 
+            'zombie': true, 
+            'Name': 'Jon'
+        };
+        let myHuman = { 
+            'zombie': false, 
+            'Name': 'Dan'
+        };
+        let myYou = { 
+            'zombie': true, 
+            'Name': 'You'
+        };
+        let thefatman = { 
+            'zombie': false, 
+            'Name': 'The fat man'
+        };
+        let Mrellis = { 
+            'zombie': false,
+            'name': 'Mr.Ellise'
+        };
+
+        function checkZombie() {
+            let myInput = document.getElementById('mySelect01').value;
+            if (myZombie.Name === myInput && myZombie.zombie) {
+                document.getElementById('myDiv01').innerHTML = myInput + ' is a zombie';
+            } 
+            else if (myYou.Name === myInput && myYou.zombie) { 
+                document.getElementById('myDiv01').innerHTML = myInput + ' are a zombie'; 
+            } 
+            else if (Mrellis.name === myInput && !Mrellis.zombie) { 
+                document.getElementById('myDiv01').innerHTML = myInput + ' Ages like a Zombie. But he is technically not a zombie'; 
+            }
+            else { 
+                document.getElementById('myDiv01').innerHTML = myInput + ' is not a zombie';
+            }
+        }
+    </script>
+
+    <select id="mySelect01" size="1" onchange="checkZombie()">
+        <option>Select a name</option>
+        <option>Jon</option>
+        <option>Dan</option>
+        <option>You</option>
+        <option>Mr.Ellise</option>
+        <option>The fat man</option>
+    </select>
+
+    <br>Is a Zombie?<br>
+
+    <div id="myDiv01">...</div><br>
+</body>
+</html>
