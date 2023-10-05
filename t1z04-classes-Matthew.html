@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>t1z04 Classes by Matthew</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEXEr5TvIfQ9AAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC"); 
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+
+</head>
+<body>
+
+<h2 align=center>t1z04-Classes-by-Matthew.html I used extend. Check in Code.</h2>
+
+<script> 
+class myPerson { 
+    constructor(passName, passAge) { 
+        this.myName = passName; 
+        this.myAge = passAge; 
+    }
+    myShow() { 
+        document.getElementById('myDiv-1').innerHTML = 'Hello ' + this.myName + '. You are ' + this.myAge + ' years old<br>';
+    }
+}
+
+class nobody extends myPerson { 
+    constructor(passName, passAge) { 
+        super(passName, passAge);  
+    }
+    myType() { 
+        document.getElementById('yourDiv-1').innerHTML = 'Hello ' + this.myName + '. You are ' + this.myAge + ' years old<br><br>';
+    }
+}
+
+</script>
+
+<input type="button" value="Class Person" onClick="createPerson(), createNothing()">
+
+<div id="myDiv-1">...</div>
+<div id="yourDiv-1">...</div>
+
+<script>
+    function createPerson() {
+        let myCharacter = new myPerson('Bob', 21);
+        myCharacter.myShow();  
+    }
+    function createNothing(){ 
+        let Mynobody = new nobody('Fred', 60);  
+        Mynobody.myType(); 
+    }
+
+</script>
+
+</body>
+</html>
