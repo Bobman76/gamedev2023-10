@@ -1,0 +1,66 @@
+Version 0.1.2 
+
+<h2 align=center>t1a05-input-output-by-Fred</h2>
+<head>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEXEr5TvIfQ9AAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC");
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        select {
+            width: 400px;
+        }
+    </style>
+</head>
+
+<input id="myNum01" type=number value="4" > <br> 
+
+<input type="button" value="myEvent squares" onclick=calculateSquare()>
+
+<script> 
+    function calculateSquare() {
+        let myIn01 = parseFloat(document.getElementById('myNum01').value);
+        let myAnswer = myIn01 * myIn01;
+        document.getElementById('myDiv01').innerHTML = myIn01 + ' squared = ' + myAnswer;
+    }
+</script>
+
+<div id="myDiv01">...</div>
+
+<input id="myNum02" type="number" value="4"><br>
+
+<input type="button" value="myEvent Addition" onclick="calculateAddition()">
+
+<script>
+    function calculateAddition() {
+        let myIn02 = parseFloat(document.getElementById('myNum02').value);
+        let myQuestion = myIn02 + myIn02;
+        document.getElementById('myDiv02').innerHTML = myIn02 + ' Added= ' + myQuestion;
+    }
+</script>
+
+<div id="myDiv03">...</div>
+
+<input id="myNum03" type="number" value="4"><br>
+
+<input type="button" value="myEvent Addition" onclick="calculateSquared()">
+
+<script>
+    function calculateSquared() {
+        let myIn03 = parseFloat(document.getElementById('myNum03').value);
+        let myin04 = parseFloat(document.getElementById('myNum03').value);
+        let myNumber= ;
+        document.getElementById('myDiv02').innerHTML = myIn02 + ' Added= ' + myNumber;
+    }
+</script>
+
+<div id="myDiv02">...</div>
+
