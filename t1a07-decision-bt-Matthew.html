@@ -1,0 +1,72 @@
+<html>
+<head>
+  <title>Decision Example</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEXEr5TvIfQ9AAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC");
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        select {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+  <h2 align="center">t1a07-decision-by-Matthew.html</h2>
+
+  <a href="https://www.w3schools.com/js/js_if_else.asp">Study Decisions with this</a>
+
+  <h4>Example input output code</h4>
+
+  <h4>example working code</h4>
+
+  <input id="myNum01" type="number" value="4"><br>
+
+  <input type="button" value="Checks if it's less than 69" onclick="{
+    let myIn01 = parseFloat(document.getElementById('myNum01').value);
+    if (myIn01 < 69){
+        document.getElementById('myDiv01').innerHTML = myIn01 + ' is less than 69';
+    }
+  }">
+
+  <input type="button" value="69 and it's multiples is the only valid answer" onclick="{
+    let myIn01 = parseFloat(document.getElementById('myNum01').value);
+    if (myIn01 % 69 === 0) { 
+        document.getElementById('myDiv01').innerHTML = myIn01 + ' is a multiple of 69';
+    } else { 
+        document.getElementById('myDiv01').innerHTML = myIn01 + ' is not a multiple';
+    }
+  }">
+
+  <input type="button" value="Is it a multiple of 69 Or 420 and is it less than 1000" onclick="{
+    let myIn01 = parseFloat(document.getElementById('myNum01').value);
+    if ((myIn01 % 69 === 0 || myIn01 % 420 === 0) && myIn01 < 1000 ) { 
+        document.getElementById('myDiv01').innerHTML = myIn01 + ' is valid';
+    } else { 
+        document.getElementById('myDiv01').innerHTML = myIn01 + ' is not valid';
+    }
+  }">
+
+  <input type="button" value="Checks if even number" onclick="{ 
+    let myIn01 = parseFloat(document.getElementById('myNum01').value);
+    if (myIn01 % 2 === 0 )
+    {
+        document.getElementById('myDiv01').innerHTML = myIn01 + ' is an even number';
+    }
+    else { 
+        document.getElementById('myDiv01').innerHTML = myIn01 + ' is not an even number';
+    }
+  }">
+
+  <div id="myDiv01">...</div>
+
+</body>
+</html>
