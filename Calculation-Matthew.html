@@ -1,0 +1,49 @@
+
+<html> 
+    <h2>I do calculations!</h2>
+    <head>
+        <style>
+            body {
+                height: 100vh;
+                width: 100vw;
+                margin: 0;
+                padding: 0;
+                background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEXEr5TvIfQ9AAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC");
+                background-repeat: no-repeat;
+                background-position: center top;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+    
+            select {
+                width: 400px;
+            }
+        </style>
+    </head>
+
+<input id = 'Number' type = number><br> 
+<i>+/-</i><br> 
+<input id = 'Number2' type = number><br>
+<div id = 'numberplace'>.....</div><br> 
+
+<input type="button" value="addition" onclick=addition()><br> 
+<input type="button" value="subtraction" onclick=subtraction()><br>
+<b>It's top minus bottom for subtraction</b>
+<script>
+
+function addition() {
+let num1 = parseFloat(document.getElementById('Number').value);
+let num2 = parseFloat(document.getElementById('Number2').value);
+let sum = num1 + num2;
+document.getElementById('numberplace').innerHTML = sum;
+
+}
+function subtraction(){ 
+    let sub_num = parseFloat(document.getElementById('Number').value);
+    let sub_num2 = parseFloat(document.getElementById('Number2').value);
+    let sub = sub_num - sub_num2; 
+    document.getElementById('numberplace').innerHTML = sub;
+}
+</script>
+
+</html>
