@@ -1,0 +1,35 @@
+<html> 
+<i>This will times your input by 2 and then check if it's more or less than twenty and if it's divisable by six</i>
+<head>codingtest.html</head>
+<div id = "text here">...</div><br> 
+<div id = "if 20 here">...</div><br> 
+<div id = "if 6 here">...</div><br> 
+<input id = "mytex01" type=number value=0>
+<input type=button value=times-number-by-2 onclick=fun()> 
+<script> 
+
+function fun(){ 
+    let mytex012 = parseFloat(document.getElementById('mytex01').value);
+    document.getElementById('text here').innerHTML = mytex012 * 2;
+    let Mystring1 = "Is less than twenty"; 
+    let mystring2 = "Is more than twenty";
+    let mystring3 = "is divisible by six"
+    let mystring4 = "is not divisible by six"
+    if((mytex012 * 2) < 20){ 
+        document.getElementById('if 20 here').innerHTML = Mystring1;  
+    }
+    else{ 
+        document.getElementById("if 20 here").innerHTML = mystring2; 
+    }
+
+    if((mytex012 * 2) % 6 === 0) { 
+        document.getElementByid('if 6 here').innerHTML = mystring3;
+    }
+    else{ 
+        document.getElementById('if 6 here').innerHTML = mystring4; 
+    }
+}
+    
+</script>
+
+</html>
