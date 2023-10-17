@@ -1,0 +1,66 @@
+<html>
+<head>
+  <title>Loops Example</title>
+</head>
+<body> <style>
+
+    body {
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEXEr5TvIfQ9AAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    </style>
+  <h2 align="center">t1a08-loops-by-Matthew.html</h2>
+
+  <a href="#">Good reference to JavaScript Loops</a><br>
+
+  <h4>Example input output code</h4>
+  <pre></pre>
+
+  <h4>I'mma just code it myself</h4>
+
+  <i>This sets the amount of time the loop iterates: </i>
+  <input id="mynum02" type="number" value="0"><br>
+
+  <input type="button" value="click me to count loops" onclick="loops()">
+  <input type = "button" value="click to to divide the amount of loops by 2 until it equals 0" onclick="my_lessloops()">
+
+  <div id="mydiv01">....</div> 
+  
+  <div id ="mydiv02">...</div><br> 
+
+  <script>
+    function loops() {
+      let b = parseFloat(document.getElementById('mynum02').value);
+      let output = '';
+      for (let i = 1; i < (b + 1); i++) {
+        if(i < 101) 
+        { 
+        output += 'loop iterated ' + i + ' times<br>';
+        document.getElementById('mydiv01').innerHTML = output;
+        }
+    else { 
+        output += 'loop iterated ' + i + ' too many times<br>'; 
+        document.getElementById('mydiv01').innerHTML = output
+        }     
+    }
+  }
+    function my_lessloops() { 
+        let lessloop = parseFloat(document.getElementById('mynum02').value);
+        while (lessloop > 0) { 
+            lessloop /= 2; 
+            document.getElementById('mydiv02').innerHTML = lessloop; 
+
+        }
+
+    }
+
+  </script>
+</body>
+</html>
