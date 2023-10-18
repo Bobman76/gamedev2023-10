@@ -1,13 +1,37 @@
 <script> 
 
-function myExampleFunction(){ 
-    let myin01 = parseInt(document.getElementById('myText01').value)
-    let mySum = myin01 + myin01 
-    let myreply = myin01 + ' + ' + myin01 + ' = ' + mySum
-    return myReply 
+function myExampleFunction(x){ 
+    mydiv = document.getElementById('mydiv01');
+    if(x < 100) {
+        let return_var = 'x is less than 100'
+        document.getElementById('mydiv01').innerHTML = return_var; 
+    }
+    else if (x > 100) { 
+        let return_var2 = 'x is more than 100 '
+        document.getElementById('mydiv01').innerHTML = return_var2;
+    }
 }
-</script>
 
+</script>
+<head> 
+<style>
+    body {
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEXEr5TvIfQ9AAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    select {
+        width: 400px;
+    }
+</style>
+</head>
 Version 0.0.1 
 
 <h2 align=center>t1a09-functions-by-Fred.html</h2>
@@ -24,12 +48,8 @@ Functions are used to sensibly organize code? then they are Called elsewhere. In
 </pre>
 <h4> Example working code</h4>
 
-<input type = text id="myText01" value="3"><br> 
+<input type = number id="myText01" value="3"><br> 
 
-<input type=button value="function Example" onClick="{
-    document.getElementById('mydiv01').innerHTML = myExample function 
-}"> 
-
-<div id="myDiv01">...</div>
-
+<input type=button value="function Example" onClick="myExampleFunction(parseFloat(document.getElementById('myText01').value))">
+<div id = mydiv01>...</div>
 
