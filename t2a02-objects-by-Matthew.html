@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Objects Example</title>
+</head>
+<head>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEXEr5TvIfQ9AAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC");
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+            background-attachment: fixed;
+        }
 
+        select {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h2 align="center">t2a02-objects-by-Matthew.html</h2>
+
+    <p>Objects are stored named variables.</p>
+
+    <h4>Example Objects code</h4>
+    <pre>
+    Let myPerson = { 
+        "firstName": "John",
+        "lastName": "Doe",  
+        "age": 50, 
+        "eyeColor": "blue"
+    }
+    </pre>
+
+    <h4>Example working Objects code</h4>
+
+    <input type="button" value="Example Object Set and Show" onclick="{
+        let myPerson = { 
+            'firstName': 'John',
+            'lastName': 'Doe', 
+            'age': 50, 
+            'eyeColor': '77',
+            'skinColor': 'Green', 
+            'brainSize': 'Smol',
+            'muscleAmount': 'many'
+        }
+
+
+        document.getElementById('myDiv01').innerHTML = '<br> myPerson Object has properties: <br>';
+        document.getElementById('myDiv01').innerHTML += 'firstName: ' + myPerson.firstName + '<br>';
+        document.getElementById('myDiv01').innerHTML += 'age: ' + myPerson.age + '<br>';
+        document.getElementById('myDiv01').innerHTML += 'eyeColor: ' + myPerson.eyeColor + '<br>';
+        document.getElementById('myDiv01').innerHTML += 'skinColor: ' + myPerson.skinColor + '<br>'
+        document.getElementById('myDiv01').innerHTML += 'brainSize: ' + myPerson.brainSize + '<br>'
+        document.getElementById('myDiv01').innerHTML += 'muscleAmount: ' + myPerson.muscleAmount + '<br>'
+    }"> <br> <br> 
+    <input type="button" value="Another object button" onclick="{
+
+let my_organs = { 
+            'Myheart': 'Heart strong:',
+            'myliver': 'liver here:',
+            'mycells': 'cells many:', 
+            'mySoul': ' soul fat:'
+
+        }
+        document.getElementById('myDiv01').innerHTML = '<br> myOrgans Object has properties: <br>';
+        document.getElementById('myDiv01').innerHTML += my_organs.Myheart + ' very good' + '<br>'
+        document.getElementById('myDiv01').innerHTML += my_organs.myliver + ' very good' + '<br>'
+        document.getElementById('myDiv01').innerHTML += my_organs.mycells + ' very good' + '<br>'
+        document.getElementById('myDiv01').innerHTML += my_organs.mySoul  + ' very good' + '<br>'
+    }">
+
+    <div id="myDiv01">...</div>
+</body>
+</html>
