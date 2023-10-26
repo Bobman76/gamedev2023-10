@@ -1,19 +1,85 @@
-version 0.0.1-2 <br> 
-
-<h2 align=center>t1a12-Events_by_Matthew.html</h2>
+version
+ 0.0.1-2 <br> 
+<html> 
+    <head>
+        <style>
+            body {
+                height: 100vh;
+                width: 100vw;
+                margin: 0;
+                padding: 0;
+                background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEXEr5TvIfQ9AAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC");
+                background-repeat: no-repeat;
+                background-position: center top;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+    
+            select {
+                width: 400px;
+            }
+            #My_nums { 
+                width: 100%; 
+                padding: 10px; 
+                margin: 5px; 
+                border: 1px slid #ccc; 
+                border-radius: 5px; 
+                font-size: 16px
+            }
+            #My_nums2 { 
+                width: 100%; 
+                padding: 10px; 
+                margin: 5px; 
+                border: 1px slid #ccc; 
+                border-radius: 5px; 
+                font-size: 16px
+            }
+            #My_nums3 { 
+                width: 100%; 
+                padding: 10px; 
+                margin: 5px; 
+                border: 1px slid #ccc; 
+                border-radius: 5px; 
+                font-size: 16px
+            }
+        </style>
+    </head>
+<body> 
+<h2 align="center">t1a12-Events_by_Matthew.html (i coded most of this from scratch )</h2>
 <b onClick="{
     this.style.color='red'
 }"> This is bold and click me to activate an event </b><br> <br> 
 <div id = mydiv_01>...</div>
-<onmouseMove
 You do at least 8 other events:<br> 
+<input type = number id='My_nums2' value=10 onfocusin="My_w_function2()" onblur="my_w_function3()" > The one above has two events. On focus in and On blur<br> 
+<input type = number id = 'My_nums' onchange="My_w_function()"> <b>The one above has one event. Onchange</b><br>
+<input type = number id = 'My_nums3' onkeydown="My_w_function4()"> The one above has one event. On keydown. <br>
 onclick, onBdClick, onchange, OnBlur, onFocus, OnmouseMove, onTouch, onKeydown, onkeyPress, onDragStart, onTouchStart, onTouchEnd, onTouchMove
+</body>
 
-<script> 
-function Mousecode(){ 
-    let My_x = 'Your mouse was here'
-    document.getElementById.innerhtml('mydiv_01').innerhtml = My_x; 
+</html>
 
-}
+<script>
+    function My_w_function() { 
+        
+        let My_value = parseFloat(document.getElementById('My_nums').value) / 2
+        
+        document.getElementById('mydiv_01').innerHTML= My_value
+    }
+
+    function My_w_function2() {
+        let My_x = parseFloat(document.getElementById('My_nums2').value) / 2
+        document.getElementById('mydiv_01').innerHTML = My_x
+    } 
+
+    function my_w_function3() { 
+        let My_x2 = parseFloat(document.getElementById('My_nums2').value)
+        document.getElementById('mydiv_01').innerHTML = My_x2
+    }
+    function My_w_function4() { 
+        let My_value = parseFloat(document.getElementById('My_nums3').value) / 2
+        
+        document.getElementById('mydiv_01').innerHTML= My_value
+    }
 
 </script>
