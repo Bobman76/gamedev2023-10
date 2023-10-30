@@ -1,119 +1,49 @@
-<!DOCTYPE html>
-<html>
+Version 0.0.1 </br> 
 <head>
-  <style>
-    body, html {
-      height: 100%;
-      width: 100%;
-      margin: 0; 
-      padding: 0; 
-      background-image: url("data:image/jpeg;base64,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");
-      background-repeat: no-repeat; 
-      background-position: center top;
-      background-size: cover;
-    }
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            background-color:  rgb(189, 189, 144);
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+            background-attachment: fixed;
+        }
 
-    table {
-      width: 50%;
-      border-collapse: collapse;
-      margin-bottom: 20px;
-    }
+        select {
+            width: 400px;
+        }
+    </style>
 
-    th, td {
-      padding: 10px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-    }
-
-    th {
-      background-color: #f2f2f2;
-    }
-
-    tr:hover {
-      background-color: #f5f5f5;
-    }
-  </style>
- <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
+<b id="myB1" style=" color:#00ff00; background-color:blue;"> This is bold</b>
+<br> 
+<button style="color: white; background-color:black; width:600px; left: 100px" onclick="{ 
+   document.getElementById('myB1').style.color = 'red'
+   document.getElementById('myB1').style.backgroundColor = 'yellow'
+}">Change Bold colour</button><br> 
+<p id="myB2" style=" color:green; background-color: red"> This is a paragraph that is coloured in a certain way. It's very cool and if you click this button it will become invisible</p><br> 
+<button style="color: white; background-color:black; width:600px; left: 100px" onclick="{ 
+   document.getElementById('myB2').style.color = ' rgb(189, 189, 144)'
+   document.getElementById('myB2').style.backgroundColor= ' rgb(189, 189, 144)'
+}">Make thing Invisible here</button><br> 
+<button value=manpulate_text_area style=" color: white; background-color:black; width: 600px; left: 100px" onclick="{ 
+    document.getElementById('very_text_area').style.color = 'white'
+    document.getElementById('very_text_area').style.backgroundColor= 'black'
+ }"> Change text area here </button>
+<br> <br> <textarea id = very_text_area style="position:relative; left: 180; top:80; width:300; height:300; ">
 
-<h6>Version 0.0.1</h6>
-<h1 style="text-align: center;">T1A04 CSS by Fred 2023</h1>
+This is a cool text area
+</textarea> <br> 
 
-Reference Link 
-<a href="https://www.w3schools.com/css/default.asp">w3schools</a><br> 
-Cascading Style Sheets (CSS) is properly done with a .css file listing all CSS commands for your website.<br> 
-Another way to do CSS is using the style tag at the top head part of a webpage.<br> 
+<button onclick="{ 
+   let My_Text = document.getElementById('very_text_area').value
+    
 
-Here is a typical in-document style:
-<pre>
-  b { 
-    color: #00f00;
-  }
-</pre><br> 
+document.getElementById('my_div01').innerHTML = document.getElementById('very_text_area').value.length
+}">Give me the length</button><br> 
 
-I do CSS inline inside the tag. It overpowers all other methods. <br><br> 
-<i>This is Italic</i> <br> 
-<i id="myB1" style="color: #00ff00; background-color: blue;">Some text with color and background</i>
-
-<button onclick="changeStyles()">Change</button>
-
-<br><br><br><br><br><br><br><br><br><br><br><br> 
-
-<img src="myImage01.jpg" width="200" style="border-radius: 200px;">
-
-<script>
-  function changeStyles() {
-    var myB1 = document.getElementById('myB1');
-    var myTextArea = document.getElementById('myTextArea');
-
-    myB1.style.color = 'red';
-    myB1.style.backgroundColor = 'yellow';
-
-    myTextArea.value = 
-      "Once upon a time there was a teacher named Mr. Ellise. He was marking the project of a geriatric high schooler. \n" +
-      "As he was marking the text, he couldn't help but be baffled by the seemingly nonexistence textarea within the CSS document. \n" +
-      "'He must be lazy.' Mr. Ellise thought. Those words were like a mantra for Mr. Ellise. *Click* He clicked the button \n" +
-      "which was supposed to cause the italic text to change colors and for some strange reason the text area appeared. \n" +
-      "'Matthew is a very smart W human.' Mr. Ellise thought.";
-  }
-</script>
-
-<textarea id="myTextArea" style="background-image: url('myImgNew.jpg'); position:relative; left:0; top:0; width:300px; height:200px;">
-  This is a text area. Not a text arena.
-</textarea> 
-<style>
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-</style>
-</head>
-<body>
-
-<h2>What is your opinon?</h2>
-
-<div class="dropdown">
-  <span>Put your mouse here to find the truth.</span>
-  <div class="dropdown-content">
-  <p>You're wrong. </p>
-  </div>
-</div>
-
-
-</body>
-</html>
+<div id="my_div01">.....</div>
