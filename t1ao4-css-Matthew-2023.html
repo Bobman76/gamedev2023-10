@@ -1,4 +1,5 @@
-Version 0.0.1 </br> 
+<!DOCTYPE html>
+<html>
 <head>
     <style>
         body {
@@ -16,34 +17,33 @@ Version 0.0.1 </br>
         select {
             width: 400px;
         }
+
+        b, p, textarea {
+            border: 2px solid #333; /* Add a border for visual distinction */
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        button {
+            color: white;
+            background-color: black;
+            width: 600px;
+            margin-left: 100px; /* Changed 'left' to 'margin-left' */
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
     </style>
-
 </head>
-<b id="myB1" style=" color:#00ff00; background-color:blue;"> This is bold</b>
-<br> 
-<button style="color: white; background-color:black; width:600px; left: 100px" onclick="{ 
-   document.getElementById('myB1').style.color = 'red'
-   document.getElementById('myB1').style.backgroundColor = 'yellow'
-}">Change Bold colour</button><br> 
-<p id="myB2" style=" color:green; background-color: red"> This is a paragraph that is coloured in a certain way. It's very cool and if you click this button it will become invisible</p><br> 
-<button style="color: white; background-color:black; width:600px; left: 100px" onclick="{ 
-   document.getElementById('myB2').style.color = ' rgb(189, 189, 144)'
-   document.getElementById('myB2').style.backgroundColor= ' rgb(189, 189, 144)'
-}">Make thing Invisible here</button><br> 
-<button value=manpulate_text_area style=" color: white; background-color:black; width: 600px; left: 100px" onclick="{ 
-    document.getElementById('very_text_area').style.color = 'white'
-    document.getElementById('very_text_area').style.backgroundColor= 'black'
- }"> Change text area here </button>
-<br> <br> <textarea id = very_text_area style="position:relative; left: 180; top:80; width:300; height:300; ">
-
-This is a cool text area
-</textarea> <br> 
-
-<button onclick="{ 
-   let My_Text = document.getElementById('very_text_area').value
-    
-
-document.getElementById('my_div01').innerHTML = document.getElementById('very_text_area').value.length
-}">Give me the length</button><br> 
-
-<div id="my_div01">.....</div>
+<br><br>
+    <b id="myB1" style="color: #00ff00; background-color: blue;" position: relative;>This is bold</b><br><br>
+    <button style="width: 600px;" onclick="document.getElementById('myB1').style.color = 'red'; document.getElementById('myB1').style.backgroundColor = 'yellow';">Change Bold color</button><br>
+    <p id="myB2" style="color: green; background-color: red;">This is a paragraph that is colored in a certain way. It's very cool, and if you click this button, it will become invisible</p><br>
+    <button style="width: 600px;" onclick="document.getElementById('myB2').style.color = 'rgb(189, 189, 144)'; document.getElementById('myB2').style.backgroundColor = 'rgb(189, 189, 144)'; document.getElementById('myB2').style.border = 'none';">Make this invisible</button>
+    <button value="manipulate_text_area" style="width: 600px;" onclick="document.getElementById('very_text_area').style.color = 'white'; document.getElementById('very_text_area').style.backgroundColor = 'black';">Change text area</button><br><br>
+    <textarea id="very_text_area" style="position: relative; left: 180px; top: 80px; width: 300px; height: 300px;">This is a cool text area</textarea><br><br><br><br><br>
+    <button onclick="document.getElementById('my_div01').innerHTML = document.getElementById('very_text_area').value.length;">Give me the length</button><br>
+    <div id="my_div01">.....</div>
+</body>
+</html>
