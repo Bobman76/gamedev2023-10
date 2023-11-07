@@ -1,97 +1,86 @@
-<script> 
-    class myAnimal { 
-        constructor(passname, passAge){ 
-            this.myName = passname;
-            this.myAge = passAge;
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEXEr5TvIfQ9AAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC");
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+            background-attachment: fixed;
         }
-        myShow(){ 
-            document.getElementById('myDiv01').innerHTML = 'Hello' + this.myName+ ' <br>'        
-        }
-    }        
-    class Mycat{   
-        constructor(passname, passAge){ 
-            this.myName = passname;
-            this.myAge = passAge;
-        }
-        
-        myShow(){ 
-            document.getElementById('myDiv01').innerHTML = this.myName + ' is a great cat' + ' they are ' + this.myAge + ' years old<br> ' 
-        }
-      }  
-    </script>
-    
-    Version 0.0.1 
-    <h2 align = center>t1a14-extend-class-by-Matthew.html</h2>
-    
-    extending a pre-existing Class <br> 
-    
-    <h4> Example Class extend code</h4>
-    <pre> 
-    class myCat extends myAnimal { 
-        myShow() { 
-            document.getelementById('myDiv01').innerhtml = this.myname 
-        }
-    }
-    </pre>
-    <head>
-        <style>
-            body {
-                height: 100vh;
-                width: 100vw;
-                margin: 0;
-                padding: 0;
-                background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEXEr5TvIfQ9AAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC");
-                background-repeat: no-repeat;
-                background-position: center top;
-                background-size: cover;
-                background-attachment: fixed;
-            }
-    
-            select {
-                width: 400px;
-            }
-        </style>
-    </head>
-    
-    <h4> Example working extending class code</h4>
-    Name: <input type=text id="myText01" Value="Bob"><br>
-    Age: <input type=number id="myNum01" Value=0> <br>  
 
-    <input type="button" value ="Put Values in sentance" onclick="{ 
-        
- // end extended class myCat 
+        select {
+            width: 400px;
+        }
+
+        #myDiv01, #myDiv02 {
+            background-color: #007BFF;
+            color: #FFF;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        input[type="text"], input[type="number"], input[type="button"] {
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2 align="center">t1a14-extend-class-by-Matthew.html</h2>
+    Extending a pre-existing Class <br>
+
+    <h4> Example Class extend code</h4>
+    <pre>
+        class myCat extends myAnimal {
+            myShow() {
+                document.getElementById('myDiv01').innerHTML = this.myName
+            }
+        }
+    </pre>
+
+    <h4> Example working extending class code</h4>
+    Name: <input type="text" id="myText01" value="Bob"><br>
+    Age: <input type="number" id="myNum01" value="0"> <br>
+
+    <input type="button" value="Put Values in Sentence" onclick="{
         myPet = new Mycat(document.getElementById('myText01').value, document.getElementById('myNum01').value)
         myPet.myShow()
-    
-        
-    }"> <br> <div id="myDiv01">....</div> <br> 
-    
-    <input type ="button" value="Click to upper case values and divide number by 2 " onclick="{ 
-        class Mybro { 
-            constructor(passname, passAge){ 
-            this.myName = passname;
-            this.myAge = passAge;
-        }
-            myshow2(){ 
+    }"> <br> <div id="myDiv01">....</div> <br>
+
+    <input type="button" value="Click to Uppercase Values and Divide Number by 2" onclick="{
+        class Mybro {
+            constructor(passname, passAge) {
+                this.myName = passname;
+                this.myAge = passAge;
+            }
+            myshow2() {
                 document.getElementById('myDiv02').innerHTML = this.myName + ' is a great cat' + ' they are ' + this.myAge + ' years old<br> '
             }
         }
-        myCell = new Mybro (document.getElementById('myText01').value.toUpperCase(), document.getElementById('myNum01').value / 2)
+        myCell = new Mybro(document.getElementById('myText01').value.toUpperCase(), document.getElementById('myNum01').value / 2)
         myCell.myshow2()
     }"> <br>
 
-    <input type = button value="Click to lower case string and times number by 2" onclick="{ 
-        class Myhomie{ 
-            constructor(passname, passAge){ 
-            this.myName = passname;
-            this.myAge = passAge;
+    <input type="button" value="Click to Lowercase String and Multiply Number by 2" onclick="{
+        class Myhomie {
+            constructor(passname, passAge) {
+                this.myName = passname;
+                this.myAge = passAge;
+            }
+            myshow3() {
+                document.getElementById('myDiv02').innerHTML = this.myName + ' is a great cat' + ' they are ' + this.myAge + ' years old<br> '
+            }
         }
-    
-    myshow3(){ 
-        document.getElementById('myDiv02').innerHTML = this.myName + ' is a great cat' + ' they are ' + this.myAge + ' years old<br> '
-    }
-}
-myCell = new Myhomie (document.getElementById('myText01').value.toLowerCase(), document.getElementById('myNum01').value * 2)
-myCell.myshow3()
+        myCell = new Myhomie(document.getElementById('myText01').value.toLowerCase(), document.getElementById('myNum01').value * 2)
+        myCell.myshow3()
     }"> <br>
-    <div id ="myDiv02">....</div>
+    <div id="myDiv02">....</div>
+</body>
+</html>
