@@ -1,0 +1,125 @@
+<h1 align=center>t2a15-spy-name.html</h1>
+
+<textarea id="myArea01" rows=4 cols=70>Hello how are you</textarea><br>
+
+<input type=button value=encrypt onclick="{
+    let myTemp = '';
+    let myString = document.getElementById('myArea01').value.split('');
+    for (let myLoop = 0; myLoop < myString.length; myLoop++) {
+        myTemp = myString[myLoop];
+        if (myString[myLoop] == 'a') { myTemp = 'b'; }
+        else if (myString[myLoop] == 'A') { myTemp = 'B'; }
+        else if (myString[myLoop] == 'b') { myTemp = 'c'; }
+        else if (myString[myLoop] == 'B') { myTemp = 'C'; }
+        else if (myString[myLoop] == 'c') { myTemp = 'd'; }
+        else if (myString[myLoop] == 'C') { myTemp = 'D'; }
+        else if (myString[myLoop] == 'd') { myTemp = 'e'; }
+        else if (myString[myLoop] == 'D') { myTemp = 'E'; }
+        else if (myString[myLoop] == 'e') { myTemp = 'f'; }
+        else if (myString[myLoop] == 'E') { myTemp = 'F'; }
+        else if (myString[myLoop] == 'g') { myTemp = 'h';} 
+        else if (myString[myLoop] == 'G') { myTemp = 'H'; }
+        else if (myString[myLoop] == 'i') { myTemp = 'j'; }
+        else if (myString[myLoop] == 'I') { myTemp = 'J'; }
+        else if (myString[myLoop] == 'h') { myTemp = 'i'; }
+        else if (myString[myLoop] == 'H') { myTemp = 'I'; }
+        else if (myString[myLoop] == 'j') { myTemp = 'k'; }
+        else if (myString[myLoop] == 'J') { myTemp = 'K'; }
+        else if (myString[myLoop] == 'k') { myTemp = 'l'; }
+        else if (myString[myLoop] == 'K') { myTemp = 'L'; }
+        else if (myString[myLoop] == 'm') { myTemp = 'n'; }
+        else if (myString[myLoop] == 'M') { myTemp = 'N'; }
+        else if (myString[myLoop] == 'n') { myTemp = 'o'; }
+        else if (myString[myLoop] == 'N') { myTemp = 'O'; }
+        else if (myString[myLoop] == 'o') { myTemp = 'p'; }
+        else if (myString[myLoop] == 'O') { myTemp = 'P'; }
+        else if (myString[myLoop] == 'p') { myTemp = 'q'; }
+        else if (myString[myLoop] == 'P') { myTemp = 'Q'; }
+        else if (myString[myLoop] == 'q') { myTemp = 'r'; }
+        else if (myString[myLoop] == 'Q') { myTemp = 'R'; }
+        else if (myString[myLoop] == 'r') { myTemp = 's'; }
+        else if (myString[myLoop] == 'R') { myTemp = 'S'; }
+        else if (myString[myLoop] == 's') { myTemp = 't'; }
+        else if (myString[myLoop] == 'S') { myTemp = 'T'; }
+        else if (myString[myLoop] == 't') { myTemp = 'u'; }
+        else if (myString[myLoop] == 'T') { myTemp = 'U'; }
+        else if (myString[myLoop] == 'v') { myTemp = 'w'; }
+        else if (myString[myLoop] == 'V') { myTemp = 'W'; }
+        else if (myString[myLoop] == 'x') { myTemp = 'y'; }
+        else if (myString[myLoop] == 'X') { myTemp = 'Y'; }
+        else if (myString[myLoop] == 'y') { myTemp = 'z'; }
+        else if (myString[myLoop] == 'Y') { myTemp = 'Z'; }
+        else if (myString[myLoop] == 'z') { myTemp = 'a'; }
+        else if (myString[myLoop] == 'Z') { myTemp = 'A'; }
+
+        myString[myLoop] = myTemp;
+    }
+    document.getElementById('myArea02').value = myString.join('');
+}"><br><br>
+
+<textarea id="myArea02" rows=4 cols="70"></textarea><br>
+
+<input type=button value="decrypt" onclick="{
+        let myUncrypt = '';
+        let myString = document.getElementById('myArea02').value.split('');
+        for (let myLoop = 0; myLoop < myString.length; myLoop++) {
+            myUncrypt = myString[myLoop];
+            if (myString[myLoop] == 'a') { myUncrypt = 'z'; }
+            else if (myString[myLoop] == 'A') { myUncrypt = 'Z'; }
+            else if (myString[myLoop] == 'c') { myUncrypt = 'b'; }
+            else if (myString[myLoop] == 'C') { myUncrypt = 'B'; }
+            else if (myString[myLoop] == 'd') { myUncrypt = 'd'; }
+            else if (myString[myLoop] == 'D') { myUncrypt = 'D'; }
+            else if (myString[myLoop] == 'e') { myUncrypt = 'd'; }
+            else if (myString[myLoop] == 'E') { myUncrypt = 'D'; }
+            else if (myString[myLoop] == 'f') { myUncrypt = 'e'; }
+            else if (myString[myLoop] == 'F') { myUncrypt = 'E'; }
+            else if (myString[myLoop] == 'f') { myUncrypt = 'e'; }
+            else if (myString[myLoop] == 'F') { myUncrypt = 'E'; }
+            else if (myString[myLoop] == 'g') { myUncrypt = 'F'; }
+            else if (myString[myLoop] == 'G') { myUncrypt = 'F'; }
+            else if (myString[myLoop] == 'I') { myUncrypt = 'H'; }
+            else if (myString[myLoop] == 'i') { myUncrypt = 'h'; }
+            else if (myString[myLoop] == 'k') { myUncrypt = 'j'; }
+            else if (myString[myLoop] == 'K') { myUncrypt = 'J'; }
+            else if (myString[myLoop] == 'l') { myUncrypt = 'k'; }
+            else if (myString[myLoop] == 'L') { myUncrypt = 'K'; }
+            else if (myString[myLoop] == 'm') { myUncrypt = 'l'; }
+            else if (myString[myLoop] == 'M') { myUncrypt = 'L'; }
+            else if (myString[myLoop] == 'n') { myUncrypt = 'm'; }
+            else if (myString[myLoop] == 'N') { myUncrypt = 'M'; }
+            else if (myString[myLoop] == 'o') { myUncrypt = 'n'; }
+            else if (myString[myLoop] == 'O') { myUncrypt = 'N'; }
+            else if (myString[myLoop] == 'p') { myUncrypt = 'o'; }
+            else if (myString[myLoop] == 'P') { myUncrypt = 'O'; }
+            else if (myString[myLoop] == 'q') { myUncrypt = 'p'; }
+            else if (myString[myLoop] == 'Q') { myUncrypt = 'P'; }
+            else if (myString[myLoop] == 'r') { myUncrypt = 'q'; }
+            else if (myString[myLoop] == 'R') { myUncrypt = 'Q'; }
+            else if (myString[myLoop] == 's') { myUncrypt = 'r'; }
+            else if (myString[myLoop] == 'S') { myUncrypt = 'R'; }
+            else if (myString[myLoop] == 't') { myUncrypt = 's'; }
+            else if (myString[myLoop] == 'T') { myUncrypt = 'S'; }
+            else if (myString[myLoop] == 'u') { myUncrypt = 't'; }
+            else if (myString[myLoop] == 'U') { myUncrypt = 'T'; }
+            else if (myString[myLoop] == 'v') { myUncrypt = 'u'; }
+            else if (myString[myLoop] == 'V') { myUncrypt = 'U'; }
+            else if (myString[myLoop] == 'w') { myUncrypt = 'v'; }
+            else if (myString[myLoop] == 'W') { myUncrypt = 'V'; }
+            else if (myString[myLoop] == 'x') { myUncrypt = 'w'; }
+            else if (myString[myLoop] == 'X') { myUncrypt = 'W'; }
+            else if (myString[myLoop] == 'y') { myUncrypt = 'x'; }
+            else if (myString[myLoop] == 'Y') { myUncrypt = 'X'; }
+            else if (myString[myLoop] == 'z') { myUncrypt = 'a'; }
+            else if (myString[myLoop] == 'Z') { myUncrypt = 'A'; }
+            myString[myLoop] = myUncrypt;
+        }
+        document.getElementById('myArea03').value = myString.join('');
+}"> 
+<input type=button value=encrypt-base64 onclick="{
+    let Myorignal = document.getElementById('myArea01').value;
+    let Myencode = btoa(Myorignal);
+    document.getElementById('myArea02').value = Myencode;
+}"><br><br>
+
+<textarea id="myArea03" rows=4 cols=70></textarea><br>
