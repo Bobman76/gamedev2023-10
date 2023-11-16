@@ -1,6 +1,25 @@
 <h1 align=center>t2a15-spy-name.html</h1>
+<head>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEXEr5TvIfQ9AAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC");
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+            background-attachment: fixed;
+        }
 
-<textarea id="myArea01" rows=4 cols=70>Hello how are you</textarea><br>
+        select {
+            width: 400px;
+        }
+    </style>
+</head>
+
+<textarea id="myArea01" rows=4 cols=70>The quick brown fox jumps over the lazy dog</textarea><br>
 
 <input type=button value=encrypt onclick="{
     let myTemp = '';
@@ -17,6 +36,8 @@
         else if (myString[myLoop] == 'D') { myTemp = 'E'; }
         else if (myString[myLoop] == 'e') { myTemp = 'f'; }
         else if (myString[myLoop] == 'E') { myTemp = 'F'; }
+        else if (myString[myLoop] == 'f') { myTemp = 'g'; }
+        else if (myString[myLoop] == 'F') { myTemp = 'G'; }
         else if (myString[myLoop] == 'g') { myTemp = 'h';} 
         else if (myString[myLoop] == 'G') { myTemp = 'H'; }
         else if (myString[myLoop] == 'i') { myTemp = 'j'; }
@@ -27,6 +48,8 @@
         else if (myString[myLoop] == 'J') { myTemp = 'K'; }
         else if (myString[myLoop] == 'k') { myTemp = 'l'; }
         else if (myString[myLoop] == 'K') { myTemp = 'L'; }
+        else if (myString[myLoop] == 'l') { myTemp = 'm'; }
+        else if (myString[myLoop] == 'L') { myTemp = 'M'; }
         else if (myString[myLoop] == 'm') { myTemp = 'n'; }
         else if (myString[myLoop] == 'M') { myTemp = 'N'; }
         else if (myString[myLoop] == 'n') { myTemp = 'o'; }
@@ -43,8 +66,12 @@
         else if (myString[myLoop] == 'S') { myTemp = 'T'; }
         else if (myString[myLoop] == 't') { myTemp = 'u'; }
         else if (myString[myLoop] == 'T') { myTemp = 'U'; }
+        else if (myString[myLoop] == 'u') { myTemp = 'v'; }
+        else if (myString[myLoop] == 'U') { myTemp = 'V'; }
         else if (myString[myLoop] == 'v') { myTemp = 'w'; }
         else if (myString[myLoop] == 'V') { myTemp = 'W'; }
+        else if (myString[myLoop] == 'w') { myTemp = 'x'; }
+        else if (myString[myLoop] == 'W') { myTemp = 'X'; }
         else if (myString[myLoop] == 'x') { myTemp = 'y'; }
         else if (myString[myLoop] == 'X') { myTemp = 'Y'; }
         else if (myString[myLoop] == 'y') { myTemp = 'z'; }
@@ -66,20 +93,26 @@
             myUncrypt = myString[myLoop];
             if (myString[myLoop] == 'a') { myUncrypt = 'z'; }
             else if (myString[myLoop] == 'A') { myUncrypt = 'Z'; }
+            else if (myString[myLoop] == 'b') { myUncrypt = 'a'; }
+            else if (myString[myLoop] == 'B') { myUncrypt = 'A'; }
             else if (myString[myLoop] == 'c') { myUncrypt = 'b'; }
             else if (myString[myLoop] == 'C') { myUncrypt = 'B'; }
-            else if (myString[myLoop] == 'd') { myUncrypt = 'd'; }
-            else if (myString[myLoop] == 'D') { myUncrypt = 'D'; }
+            else if (myString[myLoop] == 'd') { myUncrypt = 'c'; }
+            else if (myString[myLoop] == 'D') { myUncrypt = 'C'; }
             else if (myString[myLoop] == 'e') { myUncrypt = 'd'; }
             else if (myString[myLoop] == 'E') { myUncrypt = 'D'; }
             else if (myString[myLoop] == 'f') { myUncrypt = 'e'; }
             else if (myString[myLoop] == 'F') { myUncrypt = 'E'; }
             else if (myString[myLoop] == 'f') { myUncrypt = 'e'; }
             else if (myString[myLoop] == 'F') { myUncrypt = 'E'; }
-            else if (myString[myLoop] == 'g') { myUncrypt = 'F'; }
+            else if (myString[myLoop] == 'g') { myUncrypt = 'f'; }
             else if (myString[myLoop] == 'G') { myUncrypt = 'F'; }
+            else if (myString[myLoop] == 'h') { myUncrypt = 'g'; }
+            else if (myString[myLoop] == 'H') { myUncrypt = 'G'; }
             else if (myString[myLoop] == 'I') { myUncrypt = 'H'; }
             else if (myString[myLoop] == 'i') { myUncrypt = 'h'; }
+            else if (myString[myLoop] == 'j') { myUncrypt = 'i'; }
+            else if (myString[myLoop] == 'J') { myUncrypt = 'I'; }
             else if (myString[myLoop] == 'k') { myUncrypt = 'j'; }
             else if (myString[myLoop] == 'K') { myUncrypt = 'J'; }
             else if (myString[myLoop] == 'l') { myUncrypt = 'k'; }
@@ -110,8 +143,8 @@
             else if (myString[myLoop] == 'X') { myUncrypt = 'W'; }
             else if (myString[myLoop] == 'y') { myUncrypt = 'x'; }
             else if (myString[myLoop] == 'Y') { myUncrypt = 'X'; }
-            else if (myString[myLoop] == 'z') { myUncrypt = 'a'; }
-            else if (myString[myLoop] == 'Z') { myUncrypt = 'A'; }
+            else if (myString[myLoop] == 'z') { myUncrypt = 'y'; }
+            else if (myString[myLoop] == 'Z') { myUncrypt = 'Y'; }
             myString[myLoop] = myUncrypt;
         }
         document.getElementById('myArea03').value = myString.join('');
@@ -122,4 +155,12 @@
     document.getElementById('myArea02').value = Myencode;
 }"><br><br>
 
+
+
 <textarea id="myArea03" rows=4 cols=70></textarea><br>
+
+<input type=button value=decrypt-base64 onclick="{
+    let Myorignal2 = document.getElementById('myArea02').value;
+    let Myencode2 = atob(Myorignal2);
+    document.getElementById('myArea03').value = Myencode2;
+}"><br><br>
